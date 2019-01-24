@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A6F9B40-384D-424F-95D0-7B925FF97AE9}</ProjectGuid>
+    <ProjectGuid>{DA380E9D-65A5-4CE1-816B-83FA371EB726}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01_Challenge_Tests</RootNamespace>
-    <AssemblyName>01_Challenge_Tests</AssemblyName>
+    <RootNamespace>_03_Challenge_Tests</RootNamespace>
+    <AssemblyName>03_Challenge_Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuRepository_Tests.cs" />
+    <Compile Include="OutingRepository_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\01_Challenge\01_Challenge.csproj">
-      <Project>{5140766D-2A2E-4CE2-8D71-1EBB7E4387BF}</Project>
-      <Name>01_Challenge</Name>
+    <ProjectReference Include="..\03_Challenge\03_Challenge.csproj">
+      <Project>{1E286328-4C6A-45B5-BD36-BFF3E0D2BC36}</Project>
+      <Name>03_Challenge</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
