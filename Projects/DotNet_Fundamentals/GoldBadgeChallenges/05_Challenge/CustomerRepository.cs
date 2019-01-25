@@ -35,16 +35,15 @@ namespace _05_Challenge
 
         public CustomerInfo GetCustomer(string customerFirst, string customerLast)
         {
-            CustomerInfo updateCustard = new CustomerInfo();
-            foreach(CustomerInfo customer in _customerInfo)
-            {
-                if (customer.FirstName == customerFirst && customer.LastName == customerLast)
-                {
-                    updateCustard = customer;
-                }
-               
-            }
-            return updateCustard;
+            var customer = _customerInfo.Find(x => x.FirstName == customerFirst && x.LastName == customerLast);
+            return customer;
+        }
+
+        public CustomerInfo UpdateCustomer(CustomerInfo customer, string newFirst, string newLast)
+        {
+            customer.FirstName = newFirst;
+            customer.LastName = newLast;
+            return customer;
         }
     }
 }
